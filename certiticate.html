@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+  <title>Certificate of Completion</title>
+  <style>
+    body {
+      font-family: 'Times New Roman', serif;
+      background: white;
+      padding: 40px;
+    }
+
+    .cer {
+      width: 800px;
+      height: 600px;
+      padding: 40px;
+      border: 10px solid black;
+      margin: auto;
+      background-color: pink;
+      position: relative;
+    }
+
+    .cer h1 {
+      text-align: center;
+      font-size: 36px;
+      margin-top: 0;
+      letter-spacing: 2px;
+    }
+
+    .cer p {
+      text-align: center;
+      font-size: 18px;
+      margin: 20px 0;
+    }
+
+    .r{
+      font-size: 28px;
+      font-weight: bold;
+      margin: 40px 0;
+      text-align: center;
+      text-decoration: underline;
+    }
+
+    .ss {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 60px;
+      padding: 0 40px;
+    }
+
+    .sign {
+      text-align: center;
+      width: 200px;
+    }
+
+    .signl {
+      margin-top: 50px;
+      border-top: 1px solid black;
+    }
+
+    .date {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 16px;
+    }
+
+    @media print {
+      body {
+        background: none;
+        padding: 0;
+      }
+      .cer {
+        box-shadow: none;
+        margin: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="cer">
+    <h1>Certificate of Completion</h1>
+    <p>This certificate is proudly presented to</p>
+    <div class="r"> To miss Arati Sankpal</div>
+    <p>For successfully completing the required course.</p>
+
+    <div class="ss">
+      <div class="sign">
+        <div class="signl"></div>
+        <p><hr>Instructor</p><br>
+      </div>
+      <div class="sign">
+        <div class="signl"></div>
+        <p><hr>Director</p>
+      </div>
+    </div>
+
+    <div class="date">
+      <br><br>Date: 3.7.2025<br>
+    </div>
+  </div>
+</body>
+</html>
