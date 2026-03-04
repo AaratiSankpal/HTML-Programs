@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Showcase</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+}
+
+/* Main Layout */
+.product-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+    background: white;
+    margin-top: 40px;
+    border: 10px ridge;
+}
+img{
+    border: 1px solid;
+}
+
+/* Image Gallery */
+.gallery {
+    display: grid;
+    gap: 15px;
+}
+
+.main-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.thumbnail-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.thumbnail-row img {
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.thumbnail-row img:hover {
+    transform: scale(1.05);
+}
+
+/* Product Details */
+.product-details h1 {
+    margin-top: 0;
+}
+
+.price {
+    font-size: 28px;
+    color: #e63946;
+    font-weight: bold;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: gray;
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    background: rgb(212, 152, 219);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #333;
+}
+
+/* Wide Screen Layout */
+@media (min-width: 768px) {
+    .product-container {
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="product-container">
+
+    <!-- Image Gallery -->
+    <div class="gallery">
+        <div class="main-image">
+            <img src="RunningShoes5.jpeg" alt="Product">
+        </div>
+        <div class="thumbnail-row">
+            <img src="RunningShoes.jpeg" alt="" height="215">
+            <img src="RunningShoes1.jpeg" alt="" height="215">
+            <img src="RunningShoes2.jpeg" alt="" height="215">
+            <img src="RunningShoes3.jpeg" alt="" height="215">
+        </div>
+    </div>
+
+    <!-- Product Info -->
+    <div class="product-details">
+        <h1>Premium Running Shoes</h1>
+        <p class="price">$129 <span class="old-price">$179</span></p>
+        <p>
+            Lightweight, breathable, and built for performance. 
+            Perfect for everyday training or long-distance runs.
+        </p>
+        <button>Add to Cart</button>
+    </div>
+
+</div>
+
+</body>
+</html>

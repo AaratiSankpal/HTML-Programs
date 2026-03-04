@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management</title>
+</head>
+<body>
+
+    <h1>Welcome to City Library</h1>
+    <p>Explore a world of knowledge at City Library. Browse our collection of books, become a member, and check our book details below.</p>
+
+    <h2>Available Books</h2>
+    <ul>
+        <li>The Great Gatsby</li>
+        <li>To Kill a Mockingbird</li>
+        <li>1984</li>
+        <li>Pride and Prejudice</li>
+        <li>Harry Potter Series</li>
+    </ul>
+
+    <h2>Membership Form</h2>
+    <form>
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="membership">Membership Type:</label><br>
+        <select id="membership" name="membership" required>
+            <option value="">--Choose Membership--</option>
+            <option value="regular">Regular</option>
+            <option value="premium">Premium</option>
+            <option value="student">Student</option>
+        </select><br><br>
+
+        <input type="submit" value="Join Library">
+    </form>
+
+    <h2>Book Details</h2>
+    <table border="1">
+        <tr>
+            <th>Book Title</th>
+            <th>Author</th>
+            <th>Genre</th>
+            <th>Availability</th>
+        </tr>
+        <tr>
+            <td>The Great Gatsby</td>
+            <td>F. Scott Fitzgerald</td>
+            <td>Classic</td>
+            <td>Available</td>
+        </tr>
+        <tr>
+            <td>To Kill a Mockingbird</td>
+            <td>Harper Lee</td>
+            <td>Classic</td>
+            <td>Checked Out</td>
+        </tr>
+        <tr>
+            <td>1984</td>
+            <td>George Orwell</td>
+            <td>Dystopian</td>
+            <td>Available</td>
+        </tr>
+        <tr>
+            <td>Pride and Prejudice</td>
+            <td>Jane Austen</td>
+            <td>Romance</td>
+            <td>Available</td>
+        </tr>
+        <tr>
+            <td>Harry Potter Series</td>
+            <td>J.K. Rowling</td>
+            <td>Fantasy</td>
+            <td>Checked Out</td>
+        </tr>
+    </table>
+
+</body>
+</html>

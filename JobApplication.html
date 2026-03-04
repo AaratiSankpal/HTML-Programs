@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Job Application</title>
+</head>
+<body>
+
+    <h1>Welcome to Our Job Portal</h1>
+    <p>We are always looking for talented individuals to join our team. Explore the available job roles, fill out the application form, and check the eligibility criteria below.</p>
+
+    <h2>Available Job Roles</h2>
+    <ul>
+        <li>Software Developer</li>
+        <li>Graphic Designer</li>
+        <li>Marketing Executive</li>
+        <li>Human Resources Manager</li>
+        <li>Data Analyst</li>
+    </ul>
+
+    <h2>Job Application Form</h2>
+    <form>
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="role">Select Job Role:</label><br>
+        <select id="role" name="role" required>
+            <option value="">--Choose a Job Role--</option>
+            <option value="software_dev">Software Developer</option>
+            <option value="graphic_designer">Graphic Designer</option>
+            <option value="marketing_exec">Marketing Executive</option>
+            <option value="hr_manager">Human Resources Manager</option>
+            <option value="data_analyst">Data Analyst</option>
+        </select><br><br>
+
+        <label for="experience">Years of Experience:</label><br>
+        <input type="number" id="experience" name="experience" min="0" max="50" required><br><br>
+
+        <label for="message">Additional Information:</label><br>
+        <textarea id="message" name="message" rows="4"></textarea><br><br>
+
+        <input type="submit" value="Submit Application">
+    </form>
+
+    <h2>Eligibility Criteria</h2>
+    <table border="1">
+        <tr>
+            <th>Job Role</th>
+            <th>Minimum Qualification</th>
+            <th>Experience Required</th>
+        </tr>
+        <tr>
+            <td>Software Developer</td>
+            <td>Bachelor's in Computer Science</td>
+            <td>2+ years</td>
+        </tr>
+        <tr>
+            <td>Graphic Designer</td>
+            <td>Bachelor's in Design or Arts</td>
+            <td>1+ years</td>
+        </tr>
+        <tr>
+            <td>Marketing Executive</td>
+            <td>Bachelor's in Marketing/Business</td>
+            <td>2+ years</td>
+        </tr>
+        <tr>
+            <td>Human Resources Manager</td>
+            <td>MBA in HR or relevant field</td>
+            <td>3+ years</td>
+        </tr>
+        <tr>
+            <td>Data Analyst</td>
+            <td>Bachelor's in Statistics/Computer Science</td>
+            <td>2+ years</td>
+        </tr>
+    </table>
+
+</body>
+</html>

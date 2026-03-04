@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Event Management</title>
+</head>
+<body>
+
+    <h1>Welcome to Event Management</h1>
+    <p>We organize exciting events throughout the year.
+         Browse upcoming events, register online, and
+          check our event schedule below.</p>
+
+    <h2>Upcoming Events</h2>
+    <ul>
+        <li>Technology Conference 2026</li>
+        <li>Art & Design Workshop</li>
+        <li>Startup Pitch Competition</li>
+        <li>Music Festival</li>
+    </ul>
+
+    <h2>Event Registration Form</h2>
+    <form>
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="event">Select Event:</label><br>
+        <select id="event" name="event" required>
+            <option value="">--Choose an Event--</option>
+            <option value="tech_conf">Technology Conference 2026</option>
+            <option value="art_workshop">Art & Design Workshop</option>
+            <option value="startup_pitch">Startup Pitch Competition</option>
+            <option value="music_festival">Music Festival</option>
+        </select><br><br>
+
+        <label for="message">Additional Message:</label><br>
+        <textarea id="message" name="message" rows="4"></textarea><br><br>
+
+        <input type="submit" value="Register">
+    </form>
+
+    <h2>Event Schedule</h2>
+    <table border="1">
+        <tr>
+            <th>Event</th>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Venue</th>
+        </tr>
+        <tr>
+            <td>Technology Conference 2026</td>
+            <td>March 15, 2026</td>
+            <td>10:00 AM - 5:00 PM</td>
+            <td>Grand Hall, City Center</td>
+        </tr>
+        <tr>
+            <td>Art & Design Workshop</td>
+            <td>April 10, 2026</td>
+            <td>1:00 PM - 4:00 PM</td>
+            <td>Studio 5, Art District</td>
+        </tr>
+        <tr>
+            <td>Startup Pitch Competition</td>
+            <td>May 5, 2026</td>
+            <td>9:00 AM - 3:00 PM</td>
+            <td>Innovation Hub</td>
+        </tr>
+        <tr>
+            <td>Music Festival</td>
+            <td>June 20, 2026</td>
+            <td>12:00 PM - 10:00 PM</td>
+            <td>City Park</td>
+        </tr>
+    </table>
+
+</body>
+</html>

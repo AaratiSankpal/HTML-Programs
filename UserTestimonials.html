@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>User Testimonials</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+}
+
+/* Section */
+.testimonials {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+/* Flex Container */
+.testimonial-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Cards */
+.card {
+    background: white;
+    flex: 1 1 calc(33.333% - 30px);
+    max-width: 350px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    text-align: left;
+    transition: transform 0.3s ease;
+    border: 2px solid;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card p {
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.user {
+    font-weight: bold;
+}
+
+.role {
+    color: #777;
+    font-size: 14px;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .card {
+        flex: 1 1 100%;
+        max-width: 500px;
+    }
+}
+</style>
+</head>
+<body>
+
+<section class="testimonials">
+    <h2>What Our Users Say</h2>
+
+    <div class="testimonial-container">
+
+        <div class="card">
+            <p>"This platform completely transformed our workflow!"</p>
+            <div class="user">Sarah Johnson</div>
+            <div class="role">Product Manager</div>
+        </div>
+
+        <div class="card">
+            <p>"Clean design, intuitive interface, and amazing support."</p>
+            <div class="user">Michael Chen</div>
+            <div class="role">UX Designer</div>
+        </div>
+
+        <div class="card">
+            <p>"We saw a 40% boost in productivity after switching."</p>
+            <div class="user">Emily Rodriguez</div>
+            <div class="role">Startup Founder</div>
+        </div>
+
+    </div>
+</section>
+
+</body>
+</html>

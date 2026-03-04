@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interactive Photo Wall</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #111;
+}
+
+/* Gallery Grid */
+.photo-wall {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+/* Images */
+.photo-wall img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform 0.4s ease, filter 0.4s ease;
+    cursor: pointer;
+}
+
+h1{
+    color:blueviolet;
+    font-weight: 900;
+}
+
+/* Hover Effect */
+.photo-wall img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+</style>
+</head>
+<body>
+
+   <center><h1>Photo Walls</h1></center> 
+
+<div class="photo-wall">
+    <img src="PhotoDesign1.jpeg" alt="">
+    <img src="PhotoDesign2.jpeg" alt="">
+    <img src="PhotoDesign3.jpeg" alt="">
+    <img src="PhotoDesign4.jpeg" alt="">
+    <img src="PhotoDesign5.jpeg" alt="">
+    <img src="PhotoDesign6.jpeg" alt="">
+    <img src="PhotoDesign7.jpeg" alt="">
+    <img src="Photowall11.jpeg" alt="">
+    <img src="PhotoDesign8.jpeg" alt="">
+    <img src="Photowall10.jpeg" alt="">
+    <img src="Photowall11.jpeg" alt="">
+    <img src="PhotoWall12.jpeg" alt="">
+    <img src="PhotoWall13.jpeg" alt="">
+    <img src="PhotoWall14.jpeg" alt="">
+    <img src="PhotoWall15.jpeg" alt="">
+
+
+</div>
+
+</body>
+</html>

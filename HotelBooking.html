@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Hotel Booking</title>
+</head>
+<body>
+
+    <h1>Welcome to Sunshine Hotel</h1>
+    <p>Experience luxury and comfort at Sunshine Hotel. Choose your room, fill out the booking form, and check our room charges below.</p>
+
+    <h2>Room Types</h2>
+    <ul>
+        <li>Standard Room</li>
+        <li>Deluxe Room</li>
+        <li>Suite</li>
+        <li>Family Room</li>
+        <li>Presidential Suite</li>
+    </ul>
+
+    <h2>Room Booking Form</h2>
+    <form>
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="room">Select Room Type:</label><br>
+        <select id="room" name="room" required>
+            <option value="">--Choose Room--</option>
+            <option value="standard">Standard Room</option>
+            <option value="deluxe">Deluxe Room</option>
+            <option value="suite">Suite</option>
+            <option value="family">Family Room</option>
+            <option value="presidential">Presidential Suite</option>
+        </select><br><br>
+
+        <label for="checkin">Check-in Date:</label><br>
+        <input type="date" id="checkin" name="checkin" required><br><br>
+
+        <label for="checkout">Check-out Date:</label><br>
+        <input type="date" id="checkout" name="checkout" required><br><br>
+
+        <input type="submit" value="Book Now">
+    </form>
+
+    <h2>Room Charges</h2>
+    <table border="1">
+        <tr>
+            <th>Room Type</th>
+            <th>Price per Night (USD)</th>
+        </tr>
+        <tr>
+            <td>Standard Room</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>Deluxe Room</td>
+            <td>150</td>
+        </tr>
+        <tr>
+            <td>Suite</td>
+            <td>200</td>
+        </tr>
+        <tr>
+            <td>Family Room</td>
+            <td>250</td>
+        </tr>
+        <tr>
+            <td>Presidential Suite</td>
+            <td>500</td>
+        </tr>
+    </table>
+
+</body>
+</html>

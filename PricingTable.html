@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pricing Table</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+}
+
+/* Section */
+.pricing-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.pricing-section h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+/* Flex Container */
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Pricing Card */
+.card {
+    background: white;
+    padding: 30px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(28, 26, 182, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+    border: 2px solid;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card h3 {
+    margin-bottom: 15px;
+}
+
+.price {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 20px 0;
+    border: 2px solid;
+}
+
+.features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.features li {
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background: black;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #333;
+}
+
+/* Highlight Pro Plan */
+.pro {
+    border: 2px solid #0077ff;
+    transform: scale(1.05);
+    border: 2px solid;
+}
+
+/* Mobile Layout */
+@media (max-width: 768px) {
+    .pricing-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        max-width: 400px;
+        border: 2px solid;
+    }
+}
+</style>
+</head>
+<body>
+
+<section class="pricing-section">
+    <h2>Our Pricing Plans</h2>
+
+    <div class="pricing-container">
+
+        <!-- Basic -->
+        <div class="card">
+            <h3>Basic</h3>
+            <div class="price">$19/mo</div>
+            <ul class="features">
+                <li>✔ 5 Projects</li>
+                <li>✔ Email Support</li>
+                <li>✔ Basic Analytics</li>
+            </ul>
+            <button>Choose Plan</button>
+        </div>
+
+        <!-- Pro -->
+        <div class="card pro">
+            <h3>Pro</h3>
+            <div class="price">$49/mo</div>
+            <ul class="features">
+                <li>✔ 20 Projects</li>
+                <li>✔ Priority Support</li>
+                <li>✔ Advanced Analytics</li>
+            </ul>
+            <button>Choose Plan</button>
+        </div>
+
+        <!-- Premium -->
+        <div class="card">
+            <h3>Premium</h3>
+            <div class="price">$99/mo</div>
+            <ul class="features">
+                <li>✔ Unlimited Projects</li>
+                <li>✔ 24/7 Support</li>
+                <li>✔ Full Analytics Suite</li>
+            </ul>
+            <button>Choose Plan</button>
+        </div>
+
+    </div>
+</section>
+
+</body>
+</html>

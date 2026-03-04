@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Online Shopping</title>
+</head>
+<body>
+
+    <h1>Welcome to ShopEasy Online Store</h1>
+    <p>Shop the latest products at the best prices. Browse our products, place your order online, and check our price list below.</p>
+
+    <h2>Available Products</h2>
+    <ul>
+        <li>Smartphone</li>
+        <li>Laptop</li>
+        <li>Wireless Earbuds</li>
+        <li>Smartwatch</li>
+        <li>Backpack</li>
+    </ul>
+
+    <h2>Order Form</h2>
+    <form>
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="product">Select Product:</label><br>
+        <select id="product" name="product" required>
+            <option value="">--Choose a Product--</option>
+            <option value="smartphone">Smartphone</option>
+            <option value="laptop">Laptop</option>
+            <option value="earbuds">Wireless Earbuds</option>
+            <option value="smartwatch">Smartwatch</option>
+            <option value="backpack">Backpack</option>
+        </select><br><br>
+
+        <label for="quantity">Quantity:</label><br>
+        <input type="number" id="quantity" name="quantity" min="1" required><br><br>
+
+        <input type="submit" value="Place Order">
+    </form>
+
+    <h2>Product Prices</h2>
+    <table border="1">
+        <tr>
+            <th>Product</th>
+            <th>Price (USD)</th>
+        </tr>
+        <tr>
+            <td>Smartphone</td>
+            <td>500</td>
+        </tr>
+        <tr>
+            <td>Laptop</td>
+            <td>1000</td>
+        </tr>
+        <tr>
+            <td>Wireless Earbuds</td>
+            <td>150</td>
+        </tr>
+        <tr>
+            <td>Smartwatch</td>
+            <td>200</td>
+        </tr>
+        <tr>
+            <td>Backpack</td>
+            <td>50</td>
+        </tr>
+    </table>
+
+</body>
+</html>

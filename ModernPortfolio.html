@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modern Portfolio</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: #111;
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: opacity 0.3s;
+}
+
+.nav-links a:hover {
+    opacity: 0.7;
+}
+
+/* Secondary links */
+.secondary {
+    display: flex;
+    gap: 20px;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+    height: 90vh;
+    background: linear-gradient(to right, #1d3557, #457b9d);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    max-width: 600px;
+}
+
+/* ===== MOBILE (Below 600px) ===== */
+@media (max-width: 600px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .secondary {
+        display: none; /* Hide secondary links */
+    }
+
+    .nav-links {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+}
+
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">MyPortfolio</div>
+
+    <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
+
+        <div class="secondary">
+            <a href="#">Blog</a>
+            <a href="#">Resume</a>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <h1>Hi, I'm Aarati 👋</h1>
+    <p>Frontend Developer crafting modern, responsive, and user-friendly web experiences.</p>
+</section>
+
+</body>
+</html>

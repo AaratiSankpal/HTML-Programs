@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>News Portal</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+        "featured featured featured"
+        "main main sidebar";
+    grid-template-columns: 2fr 2fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Featured Story */
+.featured {
+    grid-area: featured;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px solid;
+}
+
+.featured img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.featured h2 {
+    margin-top: 15px;
+}
+
+/* Main Content */
+.main {
+    grid-area: main;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px solid;
+}
+
+/* Sidebar */
+.sidebar {
+    grid-area: sidebar;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.sidebar article {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+article{
+    border: 2px solid;
+}
+
+/* Tablet Layout */
+@media (max-width: 900px) {
+    .container {
+        grid-template-areas:
+            "featured"
+            "main"
+            "sidebar";
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Mobile Layout */
+@media (max-width: 600px) {
+    .sidebar {
+        grid-template-columns: 1fr;
+    }
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Featured Story -->
+    <section class="featured">
+        <img src="newsportal.jpeg" alt="Featured News" height="200">
+        <h2>Featured Story: Global Tech Innovations in 2026</h2>
+        <p>Major breakthroughs in AI and renewable energy are reshaping the global economy.</p>
+    </section>
+
+    <!-- Main Content -->
+    <section class="main">
+        <h3>Latest Headlines</h3>
+        <p>• Market trends indicate a rise in sustainable investments.</p>
+        <p>• Space tourism gains traction with new launches.</p>
+        <p>• Cybersecurity policies updated worldwide.</p>
+    </section>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <article>
+            <h4>Politics</h4>
+            <p>New international agreements announced.</p>
+        </article>
+
+        <article>
+            <h4>Sports</h4>
+            <p>Championship finals draw record viewership.</p>
+        </article>
+
+        <article>
+            <h4>Entertainment</h4>
+            <p>Top streaming releases this week.</p>
+        </article>
+    </aside>
+
+</div>
+
+</body>
+</html>
