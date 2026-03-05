@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General Healthcare</title>
+</head>
+<Style>
+    #id1{
+    
+        margin: 10px 20px;
+        border:5px sopid black;
+    }
+</Style>
+<body id="id1" bgcolor="pink">
+
+    <h1>City General Healthcare</h1>
+    <h2>Book Your Appointment Online</h2>
+
+    <p>Welcome to our online booking portal. We provide world-class medical services with a team of experienced specialists. Please select your department and preferred time slot below.</p>
+
+    <h3>Our Specializations</h3>
+    <ul>
+        <li>Cardiology</li>
+        <li>Pediatrics</li>
+        <li>Neurology</li>
+        <li>Orthopedics</li>
+        <li>General Medicine</li>
+    </ul>
+
+    <hr>
+
+    <h3>Appointment Request Form</h3>
+    <form >
+        <div class="form-group">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="dept">Select Department:</label>
+            <select id="dept">
+                <option>Cardiology</option>
+                <option>Pediatrics</option>
+                <option>Neurology</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="date">Preferred Date:</label>
+            <input type="date" id="date" name="date">
+        </div>
+
+        <button type="submit">Submit Request</button>
+    </form>
+
+    <hr>
+
+    <h3>Weekly Doctor Availability</h3>
+    <table border="1px">
+        <thead>
+            <tr>
+                <th>Doctor Name</th>
+                <th>Specialization</th>
+                <th>Available Days</th>
+                <th>Timing</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Dr. Sarah Smith</td>
+                <td>Cardiology</td>
+                <td>Mon, Wed, Fri</td>
+                <td>09:00 AM - 01:00 PM</td>
+            </tr>
+            <tr>
+                <td>Dr. James Wilson</td>
+                <td>Pediatrics</td>
+                <td>Tue, Thu</td>
+                <td>10:00 AM - 04:00 PM</td>
+            </tr>
+            <tr>
+                <td>Dr. Elena Rodriguez</td>
+                <td>Neurology</td>
+                <td>Mon, Tue, Wed</td>
+                <td>02:00 PM - 06:00 PM</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
